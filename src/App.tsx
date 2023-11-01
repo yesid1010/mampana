@@ -1,13 +1,15 @@
 import logo from '/assets/images/logo.jpg'
+import menu from '/assets/images/menu.jpg'
 import './App.css'
 
 function App() {
 
   return (
 
-
-    <img src={logo} className="logo" alt="Vite logo" />
-
+    <div>
+    {/* <img src={logo} className="logo" alt="Vite logo" /> */}
+    <img src={menu}  alt="menu" />
+    </div>
 
   )
 }
