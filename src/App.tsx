@@ -8,7 +8,7 @@ function App() {
 
       <>
     <div className="logo">
-        <img src={logo}  alt="Logo">
+        <img src={logo}  alt="Logo"/>
     </div>
     <h1>DRINKS MENU</h1>
     <div className="menu-container">
@@ -17,14 +17,14 @@ function App() {
                 <span>Lorem ipsum dolor</span>
                 <span className="price">$10</span>
             </div>
-            <!-- Repite los elementos .drink-item según tus necesidades -->
+           
         </div>
         <div className="menu-section">
             <div className="drink-item">
                 <span>Lorem ipsum dolor</span>
                 <span className="price">$10</span>
             </div>
-            <!-- Repite los elementos .drink-item según tus necesidades -->
+          
         </div>
     </div>
     <div className="footer">
