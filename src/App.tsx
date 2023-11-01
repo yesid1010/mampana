@@ -5,10 +5,11 @@ function App() {
 
   return (
 
-    <div>
-    {/* <img src={logo} className="logo" alt="Vite logo" /> */}
-    <img src={menu}  alt="menu" />
-    </div>
+      
+    <div className="imagen-container">
+    <img src={menu} alt="Descripción de la imagen" className="imagen-responsive"/>
+  </div>
+       
 
   )
 }
