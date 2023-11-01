@@ -8,7 +8,7 @@ function App() {
 
       <>
     <div className="logo">
-        <img src="https://via.placeholder.com/200x100?text=YOUR+LOGO" alt="Logo">
+        <img src={logo}  alt="Logo">
     </div>
     <h1>DRINKS MENU</h1>
     <div className="menu-container">
