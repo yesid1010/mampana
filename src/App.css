@@ -4,6 +4,7 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            margin: 0 auto;
 }
 
 .logo {
@@ -23,7 +24,7 @@
             flex-wrap: wrap;
         }
         .menu-section {
-            width: 48%; /* Ajusta según tu necesidad */
+            width: 100%; /* Ajusta según tu necesidad */
             border: 1px solid #fff;
             padding: 20px;
             margin-bottom: 20px;
