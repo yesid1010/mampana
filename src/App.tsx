@@ -1,4 +1,3 @@
-import logo from '/assets/images/logo.jpg'
 import menu from '/assets/images/menu.jpg'
 import './App.css'
 
