@@ -1,5 +1,6 @@
 import logo from '/assets/images/logo.jpg'
 import './App.css'
+import Home from './components/home'
 
 function App() {
 
@@ -9,9 +10,9 @@ function App() {
     <div className="logo">
         <img src={logo}  alt="Logo"/>
     </div>
-    <h1>DRINKS MENU</h1>
+    {/* <h1>MENU</h1> */}
     <div className="menu-container">
-        <div className="menu-section">
+        {/* <div className="menu-section">
             <div className="drink-item">
                 <span>Lorem ipsum dolor</span>
                 <span className="price">$10</span>
@@ -24,11 +25,12 @@ function App() {
                 <span className="price">$10</span>
             </div>
           
-        </div>
+        </div> */}
+    <Home/>
     </div>
-    <div className="footer">
+    {/* <div className="footer">
         FOR DELIVERY <span className="website">www.website.com</span>
-    </div>
+    </div> */}
 </>
   )
 }
