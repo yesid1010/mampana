@@ -23,7 +23,7 @@ export default function Home() {
           <Item>Tragos</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Coctails y Micheladas</Item>
+          <Item>Coctails</Item>
         </Grid>
         <Grid item xs={6}>
           <Item>Mecatos</Item>
