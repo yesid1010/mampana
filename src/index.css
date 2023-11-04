@@ -12,7 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-image: url('/assets/images/fondo.jpg'); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* transform: rotate(180deg); */
+
 }
+
+
 
 a {
   font-weight: 500;
@@ -66,5 +73,47 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+.light-rays {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.ray {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: transparent;
+  transform-origin: bottom center;
+  animation: rayAnimation 2s infinite linear;
+}
+
+.storm-effect {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.lightning {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: white;
+  animation: lightningAnimation 1s ease-in-out infinite;
+}
+
+@keyframes lightningAnimation {
+  0%, 100% {
+      opacity: 0;
+      transform: scaleY(0);
+  }
+  5%, 95% {
+      opacity: 1;
+      transform: scaleY(1);
   }
 }
