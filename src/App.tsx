@@ -1,4 +1,4 @@
-import logo from '/assets/images/logo.jpg'
+import logo from '/assets/images/logo.png'
 import './App.css'
 import Home from './components/home'
 
