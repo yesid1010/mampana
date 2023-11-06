@@ -1,38 +1,22 @@
-import logo from '/assets/images/logo.png'
-import './App.css'
-import Home from './components/home'
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import PageLayout from "./pages/Layout";
+import Home from "./components/home";
+import Beer from './pages/Beer'
+import PageTragos from './pages/Tragos'
 
 function App() {
-
   return (
-
-      <>
-    <div className="logo">
-        <img src={logo}  alt="Logo"/>
+    <div>
+      <Routes>
+        <Route path="/" element={<PageLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/cervezas" element={<Beer />} />
+          <Route path="/tragos" element={<PageTragos />} />
+        </Route>
+      </Routes>
     </div>
-    {/* <h1>MENU</h1> */}
-    <div className="menu-container">
-        {/* <div className="menu-section">
-            <div className="drink-item">
-                <span>Lorem ipsum dolor</span>
-                <span className="price">$10</span>
-            </div>
-           
-        </div>
-        <div className="menu-section">
-            <div className="drink-item">
-                <span>Lorem ipsum dolor</span>
-                <span className="price">$10</span>
-            </div>
-          
-        </div> */}
-    <Home/>
-    </div>
-    {/* <div className="footer">
-        FOR DELIVERY <span className="website">www.website.com</span>
-    </div> */}
-</>
-  )
+  );
 }
 
-export default App
+export default App;

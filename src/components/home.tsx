@@ -2,6 +2,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import { Link } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
   
@@ -18,16 +19,34 @@ export default function Home() {
     <Box sx={{ width: '100%' }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6}>
+          <Link to="/cervezas">
           <Item>Cervezas</Item>
+          </Link>
         </Grid>
         <Grid item xs={6} >
+        <Link to="/tragos">
           <Item>Tragos</Item>
+          </Link>
         </Grid>
         <Grid item xs={6}>
+        <Link to="/coctails">
           <Item>Coctails</Item>
+          </Link>
         </Grid>
         <Grid item xs={6}>
+        <Link to="/mecatos">
           <Item>Mecatos</Item>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+        <Link to="/cigarrillos">
+          <Item>Cigarrillos</Item>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+        <Link to="/otros">
+          <Item>Otros</Item>
+          </Link>
         </Grid>
       </Grid>
     </Box>
